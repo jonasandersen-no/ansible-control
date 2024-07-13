@@ -1,0 +1,5 @@
+linode:
+  hosts:
+    test_node:
+      ansible_host: 10.0.0.2
+      apache_package: apache2

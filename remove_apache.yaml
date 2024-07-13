@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Install apache2 package
+    package:
+      name:
+        - "{{ apache_package }}"
+      state: latest
+      update_cache: yes
