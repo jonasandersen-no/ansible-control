@@ -1,0 +1,10 @@
+- hosts: 172.232.159.96
+  remote_user: root
+  vars:
+    NORMAL_USER_NAME: 'gollien'
+  tasks:
+    - name: Create a limited account
+      user:
+        name: "{{ NORMAL_USER_NAME }}"
+        password: '$6$IWSAof/1x5/cc.oq$0evR5tXswkDvoWmZWKkEV4LAvOWnTcxfVAxbR7GJskDX31W7kE6zbcIBkt4v//sZ/Y9XCCuzUwKAoMTWwzvd8/'
+        shell: /bin/bash

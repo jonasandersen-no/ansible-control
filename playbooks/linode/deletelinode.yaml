@@ -1,0 +1,16 @@
+- name: Create Linode Instance
+  hosts: localhost
+  vars_files:
+      - ./vars.yaml
+  tasks:
+    - name: Create a Linode instance
+      linode.cloud.instance:
+        api_token: "{{ api_token }}"
+        label: my-ansible-linode
+        type: g6-nanode-1
+        authorized_keys:
+          - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINYxZrH9/S5M3uRkBRhdeeA4mr+TlS0ZfuB/BUN5Ukhk"
+        region: se-sto
+        image: linode/ubuntu24.04
+        root_pass: "{{ password }}"
+        state: absent
