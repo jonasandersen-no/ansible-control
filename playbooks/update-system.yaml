@@ -1,0 +1,12 @@
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Update repository index
+    ansible.builtin.package:
+      update_cache: yes
+
+  - name: Upate all packages
+    ansible.builtin.package:
+      name: "*"
+      state: latest
