@@ -1,4 +1,5 @@
 - name: Check if system reboot is required
+  hosts: all
   become: true
   tasks:
     - name: Check if system reboot is required
