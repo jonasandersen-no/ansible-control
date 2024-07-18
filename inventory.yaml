@@ -2,6 +2,7 @@ linode:
   hosts:
     bjoggis-sql:
       ansible_host: bjoggis-sql
+      ansible_user: gollien
       ansible_sudo_pass: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           65353963373935616263626239393735343732343439353261326462623830366538316333656434
