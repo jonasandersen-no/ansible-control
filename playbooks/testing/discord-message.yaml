@@ -1,6 +1,5 @@
 - name: Check if system reboot is required
-  hosts: all
-  become: true
+  hosts: local
   tasks:
     - name: Send a message to the Discord channel
       community.general.discord:
