@@ -1,6 +1,8 @@
 - name: Install Prometheus Node Exporter
   hosts: five
   become: true
+  collections:
+    - prometheus.prometheus
   tasks:
     - name: Install node exporter
       prometheus.prometheus.node_exporter:
