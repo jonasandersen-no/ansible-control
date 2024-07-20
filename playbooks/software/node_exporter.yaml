@@ -2,5 +2,6 @@
   hosts: five
   become: true
   tasks:
-    - name: Install prometheus
+    - name: Install node exporter
       prometheus.prometheus.node_exporter:
+

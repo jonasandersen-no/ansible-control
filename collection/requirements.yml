@@ -1,5 +1,7 @@
 collections:
   - community.general
+  - prometheus.prometheus
+
 
   # With the collection name, version, and source options
 #  - name: my_namespace.my_other_collection
