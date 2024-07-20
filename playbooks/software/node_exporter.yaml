@@ -1,5 +1,5 @@
 - name: Install Prometheus Node Exporter
-  hosts: all
+  hosts: five
   become: true
   tasks:
     - name: Install prometheus
