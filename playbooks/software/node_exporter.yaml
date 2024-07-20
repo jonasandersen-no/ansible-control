@@ -5,5 +5,5 @@
     - prometheus.prometheus
   tasks:
     - name: Install node exporter
-      prometheus.prometheus.node_exporter:
+      prometheus.node_exporter:
 
